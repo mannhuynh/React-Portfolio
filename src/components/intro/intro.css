@@ -1,0 +1,83 @@
+.i {
+	display: flex;
+
+	height: 100vh; /* 100% screen */
+}
+.i-left {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.i-right {
+	flex: 1;
+	position: relative;
+}
+
+.i-left-wrapper {
+	margin-left: 50px;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.i-intro {
+	font-size: 30px;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.i-name {
+	font-size: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.i-title {
+	height: 50px;
+	overflow: hidden;
+}
+.i-title-wrapper {
+	height: 100%;
+	animation: move 5s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+	50% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(-100px);
+	}
+}
+.i-title-item {
+	height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #7950f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i-scroll {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+}
+.i-image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	position: absolute;
+}
+/* clip-path genarator:  https://bennettfeely.com/clippy/*/
+.i-bg {
+	clip-path: circle(50% at 50% 50%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #7950f2;
+}
