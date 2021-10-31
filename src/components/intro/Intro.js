@@ -16,10 +16,10 @@ function Intro() {
 							<div className="i-title-item">Cooker</div>
 						</div>
 					</div>
-					<p className="i-desc">
-						I design life as a Daddy, grow life as a Cooker, and pay life as a
-						Developer
-					</p>
+
+					<p className="i-desc">I design life as a Daddy</p>
+					<p className="i-desc">I grow life as a Cooker</p>
+					<p className="i-desc">I pay life as a Developer</p>
 				</div>
 				<svg
 					width="75"
