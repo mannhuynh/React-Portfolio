@@ -1,0 +1,33 @@
+.p {
+	width: 30%;
+	height: 40vh;
+	margin: 20px 10px;
+	border: 2px solid rgba(168, 130, 238);
+	border-radius: 10px 10px 0px 0px;
+	overflow: hidden;
+}
+.p-browser {
+	height: 20px;
+	background-color: rgba(168, 130, 238);
+	display: flex;
+	align-items: center;
+	position: sticky;
+	z-index: 3;
+}
+.p-circle {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(129, 67, 245, 0.562);
+	margin-right: 3px;
+}
+.p-image {
+	width: 100%;
+	/* setup for hover below */
+	transition: all 5s ease;
+}
+/* hover will make image slide up */
+.p:hover .p-image {
+	transform: translateY(-100%);
+}
+/* Use GoFullPage extension to take long picture */
